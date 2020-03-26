@@ -1,0 +1,94 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Mar 26 15:17:04 2020
+
+@author: stellanwea
+"""
+import doctest 
+
+
+#Q1
+def sup21 (x) :
+    if x >= 21 :
+        return True
+    else : 
+        return False
+
+#Q2
+        
+def pairs(liste):
+    new_l = []
+    for i in liste :
+        if i % 2 == 0 :
+            new_l.append(i)
+    return new_l
+
+#Q3
+
+
+def ajout41(liste) : 
+    new_l = liste.append(4)
+    return(new_l)
+
+#Q4
+
+def to_strings(dico) :
+    l = []
+    for i,j in dico.items() :
+        l.append([str(i),str(j)])
+    return l
+
+#Q5
+
+def extremites (liste) :
+    new_l = [liste[0],liste[1],liste[len(liste)-2],liste[len(liste)-1]]
+    return new_l
+
+#Q6
+
+
+
+#Q7
+
+liste = [9,2,5,7,3,4,2,2,3]
+
+def tri_et_inverse(l) : 
+    inv = reversed(l)
+    sort = sorted(l)
+    return [inv,sort]
+
+#Q8
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+
+def aller_a_paris() : 
+    test = True
+    chaine = input('Ecrire une chaîne de caractères :')
+    while type(chaine) != str :
+        chaine = input('Ecrire une chaîne de caractères :')
+    test = False
+
+#Q9
+    
+ville_nom_pays = {'Paris' : 'France',
+                  'Berlin' : 'Allemagne',
+                  'Madrid' : 'Espagne',
+                  'Moscou' : 'Russie'}
+
+#Q10
+
+class Pays :
+    
+    def __init__(self, nom, visa):
+        self.nom = nom
+        self.visa = visa
+    
+ville_pays = {'Paris' : False,
+              'Berlin' : False,
+              'Madrid' : False,
+              'Moscou' : True
+              }
+
